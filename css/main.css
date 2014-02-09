@@ -1,0 +1,153 @@
+
+
+/* ==========================================================================
+   Aimee's custom styles
+   ========================================================================== */
+
+*{
+	font-family: "proxima-nova", sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body{
+	color: rgb(49, 49, 49);
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	padding-top: 140px;
+}
+
+a {
+	transition: color 200ms linear;
+	-webkit-transition: color 200ms linear;
+	-moz-transition: color 200ms linear;
+	-o-transition: color 200ms linear;
+	-ms-transition: color 200ms linear;
+}
+
+body, input, select, textarea, button {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* Top Navigation and Banner*/
+
+h2.navbar-brand{
+	letter-spacing: .6px;
+	margin-top: 0px;
+}
+
+.navbar{
+	position: absolute;
+	top: 25px;
+}
+.navbar-brand, h1{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 2em;
+	display: block;
+}
+.banner{
+	background-color: rgb(235,233,229);
+}
+
+.portfolio span{
+	 display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	z-index: 12;
+}
+
+div.info-section {
+	background: rgb(47, 47, 47);
+	padding: 90px 20px 80px;
+	text-align: center;
+	font-size: 2em;
+	color: white;
+}
+
+.bio-section{
+	background-image: url('../img/flowers.jpg');
+}
+
+/* Homepage Portfolio Styling*/
+
+img.work {
+	max-width: 100%;
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;	
+	top: 50%;
+    left: 50%;
+}
+
+.portfolio a {
+	display: block;
+	background: rgb(60, 105, 142);
+	background: rgba(56, 104, 143, 0.95);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	zoom: 1;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	transition: opacity 200ms linear;
+	-webkit-transition: opacity 200ms linear;
+	-moz-transition: opacity 200ms linear;
+	-o-transition: opacity 200ms linear;
+	-ms-transition: opacity 200ms linear;
+	z-index: 1;
+}
+
+.portfolio a:hover{
+	zoom: 1;
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+}
+.portfolio span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	z-index: 12;
+}
+
+.portfolio h3 {
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 0.16em;
+}
+
+.portfolio p {
+	color: rgb(138, 183, 223);
+}
+
+/*Bottom Sections*/
+
+.right-col-bottom{
+	border-left: 1px solid black;
+}
+.left-col-bottom{
+	text-align: right;
+}

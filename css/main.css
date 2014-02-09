@@ -60,6 +60,10 @@ h2.navbar-brand{
 .banner{
 	background-color: rgb(235,233,229);
 }
+.navbar-toggle, .navbar-toggle .icon-bar {
+	color: white;
+	background-color: black;
+}
 
 .portfolio span{
 	 display: inline-block;
@@ -150,4 +154,8 @@ img.work {
 }
 .left-col-bottom{
 	text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+
 }

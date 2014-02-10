@@ -13,6 +13,7 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	overflow: hidden;
+
 }
 
 html {
@@ -24,7 +25,17 @@ body{
 	font-family: "proxima-nova",sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	padding-top: 140px;
+	padding-top: 150px;
+	background-color: rgb(245,245,245)
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+
+.intro-para p{
+		padding: 90px 20px 80px;
 }
 
 a {
@@ -50,6 +61,7 @@ h2.navbar-brand{
 .navbar{
 	position: absolute;
 	top: 25px;
+
 }
 .navbar-brand, h1{
 	text-transform: uppercase;
@@ -59,6 +71,9 @@ h2.navbar-brand{
 }
 .banner{
 	background-color: rgb(235,233,229);
+	background-image: -webkit-linear-gradient(38deg, rgb(235,215,190), rgb(235,215,190) 50%, rgb(235,233,229) 50%, rgb(235,233,229) 100%);
+	background-image: -moz-linear-gradient(38deg, #4cd2da, #4cd2da 50%, #5adae2 50%, #5adae2 100%);
+	border-bottom: 2px solid rgb(243,243,21);
 }
 .navbar-toggle, .navbar-toggle .icon-bar {
 	color: white;
@@ -77,14 +92,54 @@ h2.navbar-brand{
 
 div.info-section {
 	background: rgb(47, 47, 47);
-	padding: 90px 20px 80px;
+	padding: 40px 20px 20px;
 	text-align: center;
 	font-size: 2em;
 	color: white;
+	border-top: dashed 2px rgb(243,243,21);
+	border-bottom: dashed 2px rgb(243,243,21);
 }
 
 .bio-section{
-	background-image: url('../img/flowers.jpg');
+	padding: 90px 20px 80px;
+	 /*background-image: url('../img/flowers.jpg');*/
+	-webkit-transition: all .2s ease-in-out;
+}
+
+.bio-section:hover 
+{ 
+	-webkit-transform: scale(1.1); 
+}
+
+.bio-section::after {
+	
+	content: "";
+	  /*background: url(../img/balloons.jpg) no-repeat center center fixed;*/
+/*	  background: url(../img/bricks.jpg) no-repeat center center fixed;*/
+	  opacity: 0.5;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+	  z-index: -1;   
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+blockquote {
+	text-indent: -0.8em;
+	font-size: 12px;
+}
+
+.work p{
+	background-color: rgba (255,255,255,.7);
+		max-width: 480px;
+	margin: 0 auto 32px;
+	text-align: center;
+	font-size: 2.25rem;
 }
 
 /* Homepage Portfolio Styling*/
@@ -107,6 +162,7 @@ img.work {
 	height: 100%;
 	width: 100%;
 	position: absolute;
+	padding: 15px;
 	zoom: 1;
 	opacity: 0;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";

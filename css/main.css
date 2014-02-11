@@ -75,6 +75,29 @@ h2.navbar-brand{
 	background-image: -moz-linear-gradient(38deg, #4cd2da, #4cd2da 50%, #5adae2 50%, #5adae2 100%);
 	border-bottom: 2px solid rgb(243,243,21);
 }
+
+.info-section{
+
+	/*background-color: rgb(235,233,229);*/
+	background-image: -webkit-linear-gradient(38deg, rgb(235,233,229) , rgb(235,233,229) 50%, rgb(235,215,190) 50%, rgb(235,215,190)  100%);
+	/*background-image: -moz-linear-gradient(38deg, #4cd2da, #4cd2da 50%, #5adae2 50%, #5adae2 100%);*/
+	border-bottom: 2px solid rgb(243,243,21);
+	border-top: 2px solid rgb(243,243,21);
+}
+
+.info-section:hover{
+	 		-webkit-transform: 3000s ease-out, 
+            -moz-transform: 30s ease-out,
+            -o-transform: 30s ease-out;
+            -ms-transform: 30s ease-out;
+            transform: 30s ease-out;
+
+     -webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
 .navbar-toggle, .navbar-toggle .icon-bar {
 	color: white;
 	background-color: black;
@@ -91,19 +114,37 @@ h2.navbar-brand{
 }
 
 div.info-section {
-	background: rgb(47, 47, 47);
 	padding: 40px 20px 20px;
+	/*background: rgb(47, 47, 47);
+	
 	text-align: center;
 	font-size: 2em;
 	color: white;
 	border-top: dashed 2px rgb(243,243,21);
-	border-bottom: dashed 2px rgb(243,243,21);
+	border-bottom: dashed 2px rgb(243,243,21);*/
 }
 
 .bio-section{
 	padding: 90px 20px 80px;
 	 /*background-image: url('../img/flowers.jpg');*/
 	-webkit-transition: all .2s ease-in-out;
+	margin-top: -15px;
+	/*	From CSS3 Pattern Gallery*/
+	background-color: #FF7D9D;
+	background-size: 58px 58px;
+	background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
+	0px 36px, 4px 2px, 29px 6px, 33px 30px;
+	background-image: 
+	linear-gradient(335deg, #C90032 23px, transparent 23px),
+	linear-gradient(155deg, #C90032 23px, transparent 23px),
+	linear-gradient(335deg, #C90032 23px, transparent 23px),
+	linear-gradient(155deg, #C90032 23px, transparent 23px),
+
+	linear-gradient(335deg, #C90032 10px, transparent 10px),
+	linear-gradient(155deg, #C90032 10px, transparent 10px),
+	linear-gradient(335deg, #C90032 10px, transparent 10px),
+	linear-gradient(155deg, #C90032 10px, transparent 10px);
+	border-bottom: 1px solid rgb(243,243,21);
 }
 
 .bio-section:hover 
@@ -123,10 +164,25 @@ div.info-section {
 	  right: 0;
 	  position: absolute;
 	  z-index: -1;   
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+.bio-section p{
+	color: black;
+	background-color: rgba(235,233,229, 0.9) !important;
+	opacity: 1;
+	padding: 5px;
+	display:block;
+}
+
+.text-wrap {
+	
+	    border-style: solid;
+    
+
 }
 
 blockquote {
@@ -135,12 +191,14 @@ blockquote {
 }
 
 .work p{
-	background-color: rgba (255,255,255,.7);
-		max-width: 480px;
+
+	max-width: 480px;
 	margin: 0 auto 32px;
 	text-align: center;
 	font-size: 2.25rem;
 }
+
+
 
 /* Homepage Portfolio Styling*/
 
@@ -210,6 +268,10 @@ img.work {
 }
 .left-col-bottom{
 	text-align: right;
+}
+
+.my-picture {
+	text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
